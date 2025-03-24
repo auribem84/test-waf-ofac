@@ -18,7 +18,7 @@ resource "aws_wafv2_web_acl" "main" {
 
   name        = var.waf_name
   description = "WAF Web ACL for blocking OFAC sanctioned countries"
-  scope       = "REGIONAL"
+  scope       = var.web-acl_scope
 
   default_action {
     allow {}

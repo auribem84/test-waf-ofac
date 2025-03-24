@@ -44,3 +44,9 @@ variable "log_retention_days" {
   type        = number
   default     = 30
 }
+
+variable "web-acl_scope" {
+  description = "Indicate the scrope of the acl"
+  type        = string
+  default     = "REGIONAL"
+}
